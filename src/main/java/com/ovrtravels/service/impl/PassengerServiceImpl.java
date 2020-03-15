@@ -14,7 +14,7 @@ public class PassengerServiceImpl implements IPassengerService {
 @Autowired
 PassengerRepository repo;
 	@Override
-	public boolean ticketBooking(Integer ticketNo,String firstName,String lastName,Integer age,String email,Integer seatNo,Gender gender,Long mobile,Date dateOfJourney) {
+	public boolean ticketBooking(Integer ticketNo,String firstName,String lastName,Integer age,String email,Integer seatNo,Gender gender,Long mobile,Date dateOfJourney, String source, String destination) {
     Passenger p=new Passenger();
     p.setAge(age);
     p.setEmail(email);
@@ -25,6 +25,8 @@ PassengerRepository repo;
     p.setTicketId(ticketNo);
     p.setJourneyDate(dateOfJourney);
     p.setSeatNo(seatNo);
+    p.setSource(source);
+    p.setDestination(destination);
     
     
     boolean flag= repo.existsById(seatNo);

@@ -37,8 +37,9 @@ public class PassengerController {
 		
 	}
 	@PostMapping("/process")
-public String processing(@RequestParam Integer ticketNo,@RequestParam String firstName,@RequestParam String lastName,@RequestParam Integer age,@RequestParam String email,@RequestParam Integer seatNo,@RequestParam Gender gender,@RequestParam Long mobile,@RequestParam Date dateOfJourney) {
-	boolean flag = impl.ticketBooking(ticketNo, firstName, lastName, age, email, seatNo, gender, mobile, dateOfJourney);
+public String processing(@RequestParam Integer ticketNo,@RequestParam String firstName,@RequestParam String lastName,@RequestParam Integer age,@RequestParam String email,@RequestParam Integer seatNo,@RequestParam Gender gender,@RequestParam Long mobile,@RequestParam Date dateOfJourney,
+		@RequestParam String source, @RequestParam String destination) {
+	boolean flag = impl.ticketBooking(ticketNo, firstName, lastName, age, email, seatNo, gender, mobile, dateOfJourney, source, destination);
 	if(flag==true) {
 		return "success";
 	}
@@ -46,6 +47,7 @@ public String processing(@RequestParam Integer ticketNo,@RequestParam String fir
 		return "failure";
 	}
 	
+	}
 	
 	
 	
@@ -53,4 +55,4 @@ public String processing(@RequestParam Integer ticketNo,@RequestParam String fir
 	
 	
 	
-}
+

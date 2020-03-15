@@ -44,18 +44,6 @@
                <td>Date of Journey(yyyy.MM.dd): </td>
                </td>  <td> <input   type="text"    name="dateOfJourney"> </td>
           </tr>
-          
-          <tr>
-               <td> Source : </td>
-               <td> <input   type="text"    name="source"> </td>
-          </tr>
-          
-          <tr>
-               <td> Destination : </td>
-               <td> <input   type="text"    name="destination"> </td>
-          </tr>
-          
-          
 
           <tr>
                <td  colspan="5">   <input   type="submit"    value="submit"> </td>
