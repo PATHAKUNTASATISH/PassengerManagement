@@ -11,12 +11,12 @@
               <td>LastName : </td>
               <td><input   type="text"    name="lastName"> </td>
           </tr>
-          <tr>
+          <tr> 
                <td>Email : </td> 
                <td> <input   type="text"    name="email"> </td>
           </tr>
 
-          <tr>
+          <tr>  
                <td> SeatNo : </td>
                <td> <input   type="text"    name="seatNo"> </td>
           </tr>
