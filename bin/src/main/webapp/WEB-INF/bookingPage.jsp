@@ -15,10 +15,7 @@
                <td>Email : </td> 
                <td> <input   type="text"    name="email"> </td>
           </tr>
-          <tr>
-               <td> TicketNo : </td>
-               <td> <input   type="text"    name="ticketNo"> </td>
-          </tr>
+         
           <tr>
                <td> SeatNo : </td>
                <td> <input   type="text"    name="seatNo"> </td>
